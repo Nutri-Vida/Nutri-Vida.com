@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri Vida - Para tu pequeño</title>
+    <link rel="shortcut icon" href="imagenes/logo.ico" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #E7D1C9;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #E7D1C9;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .header .logo-img {
+            width: 50px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+            border-radius: 5px; /* Opcional, si quieres bordes redondeados */
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #f0e4dc;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .banner {
+            background-color: #f0e4dc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner img {
+            max-width: 40%;
+            border-radius: 10px;
+        }
+        .banner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 20px;
+        }
+        .banner-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #625F5F;
+            margin-bottom: 20px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .option {
+            font-size: 20px;
+            color: #625F5F;
+            cursor: pointer;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            background-color: #D0B49F; /* Color blanco hueso */
+            border-radius: 5px;
+        }
+        .option:hover {
+            color: #d49b6f;
+        }
+        .calendar-new-post {
+            display: flex;
+            gap: 20px;
+            width: 80%;
+        }
+        .calendar {
+            flex: 3;
+            background-color: #f0e4dc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .new-post {
+            flex: 1;
+            background-color: #f0e4dc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .calendar img, .new-post img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            margin-top: 40px;
+            background-color: #f8f4f0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo NutriVida" class="logo-img" width="0px">
+            <h1>Nutri Vida</h1>
+        </div>
+        <nav class="nav">
+            <a href="inicio.html">Inicio</a>
+            <a href="lactancia.html">Lactancia Materna</a>
+            <a href="alimentacion.html">Alimentación Complementaria</a>
+            <a href="foro.html">Foro</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="banner">
+            <img src="imagenes/b.jpg" alt="Lactancia Materna" >
+            <div class="banner-content">
+                <div class="banner-title">Para tu pequeño</div>
+                <div class="options">
+                    <a href="lactancia.html">
+                        <div class="option">Lactancia Materna</div>
+                    </a>
+                    <a href="alimentacion.html">                    
+                        <div class="option">Alimentación Complementaria</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="calendar-new-post">
+            <section class="calendar">
+                <h2>Accede al registro de tomas</h2>
+                <p> <b>¿Cómo acceder al Calendario?</b>
+                   <br> 1. En la parte superior de la página, encontrarás un ícono llamado "Duplicar". Haz clic en ese botón.
+                   <br>   2. Para acceder y editar la plantilla, primero debes crear una cuenta en Notion. Puedes registrarte usando una cuenta de Google, Apple o tu correo electrónico.
+                   <br> 3. Una vez que hayas ingresado tu email, selecciona la opción "Personal" y haz clic en "Continuar".
+                   <br> 4. En la siguiente página, cuando se te pregunte sobre tus intereses, puedes hacer clic en "Omitir" si lo prefieres.
+                   <br>  5. Después de completar estos pasos, aparecerá una pestaña donde deberás hacer clic en el botón "Agregar al espacio privado".
+                   <br>  6. ¡Listo! Ahora podrás acceder al calendario y comenzar a utilizarlo.</p>
+                <a href="https://www.notion.so/Registro-de-Lactancia-materna-aa2bfc8c899d4cfba1b76a9f229961ef?pvs=4" target="_blank">
+                    <img src="imagenes/calen3.png" alt="Calendario de tomas del bebé" width="250px">
+                </a>
+            </section>
+            <section class="new-post">
+                <h2> <em><strong>PRE ORDENA TU KIT AQUÍ</strong> </em></h2>
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=r4yvt9iDREaFrjF8VFIjwS5pgYfiH41Gltl9c0ctXl1UQTc4V1dFUldaUk45Sk9XRVhWNldKWlVINy4u" target="_blank">
+                    <img src="imagenes/nutrivida.jpg" alt="Alimentación Complementaria" width="550px" height="auto">
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <footer style="text-align: center; padding-top:1%">
+        <p>NutriVida - Guayaquil, Ecuador - 2024</p>
+        <br>
+    </footer>
+</body>
+</html>
